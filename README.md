@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+🐾 **Pet Shop Ateliê Teal | Mini Loja Virtual**
+Status do Projeto: 🚀 Concluído (Aula de Desenvolvimento Web Fullstack)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+📖 **Descrição:**
 
-## Available Scripts
+Este projeto é uma aplicação React moderna que simula uma **loja online de produtos para pets**. O objetivo foi criar uma experiência fluida para o usuário, integrando o consumo de uma API externa com a funcionalidade de gerenciamento de inventário em tempo real.
 
-In the project directory, you can run:
+🛠️ **Tecnologias e Ferramentas:**
 
-### `npm start`
+React JS: Biblioteca base para a construção da interface.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+PrimeReact: Componentes profissionais (Cards, Diálogos, Botões).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+PrimeFlex: Sistema de grid responsivo para dispositivos móveis.
 
-### `npm test`
+Axios: Cliente HTTP para busca de dados na Fake Store API.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Unsplash API: Utilizada para as imagens de produtos pet de alta qualidade.
 
-### `npm run build`
+🌟 **Funcionalidades Principais:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🛒 **Vitrine Interativa**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Uma página inicial elegante onde o cliente pode explorar os produtos para pets. Cada item possui um efeito de sombra ao passar o mouse.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🔍 **Detalhes do Produto**
 
-### `npm run eject`
+Ao clicar em "Ver Detalhes", um componente Dialog (modal) é disparado, exibindo a descrição técnica do produto e uma imagem ampliada sem recarregar a página.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+📝 **Cadastro de Produtos**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Uma seção exclusiva para adicionar novos itens. Ao preencher o formulário, o novo produto é injetado instantaneamente no topo da loja através do gerenciamento de estado (useState).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+📂 **Organização do Código:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+App.js: O controlador de navegação e estilos globais (Teal Theme).
 
-## Learn More
+Storefront.js: A visão principal de exposição dos produtos pet.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ProductList.js: Onde ocorre a "mágica" da API e o mapeamento dos itens.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ProductCard.js: Componente individual de exibição e lógica do modal.
 
-### Code Splitting
+ProductForm.js: Interface de cadastro de novos produtos.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🚀 **Como Iniciar:**
 
-### Analyzing the Bundle Size
+Clone o projeto: git clone [https://github.com/seu-usuario/projeto.git](https://github.com/seu-usuario/projeto.git)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Instale as dependências: npm install
 
-### Making a Progressive Web App
+Rode a aplicação: npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+💡 **Aprendizados Adquiridos:**
 
-### Advanced Configuration
+Neste projeto, pude consolidar conceitos fundamentais de desenvolvimento:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Hooks: useState para dados voláteis e useEffect para requisições assíncronas.
 
-### Deployment
+Props: Comunicação eficiente entre componentes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Personalização: Adaptação de uma API genérica para um nicho específico (Produtos Pet).
 
-### `npm run build` fails to minify
+UX/UI: Uso de cores harmônicas e feedbacks visuais para o usuário.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Desenvolvido com ☕ e código durante as aulas de Desenvolvimento Web.
