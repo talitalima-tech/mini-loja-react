@@ -21,7 +21,6 @@ const ProductCard = ({ product }) => {
                 <h2 className="text-teal-900 m-0">{product.title}</h2>
                 <h3 className="text-teal-600 mb-3">R$ {product.price}</h3>
                 <p className="text-700 line-height-3">{product.description}</p>
-                {/* 💡 ALTERE AQUI: O rótulo do botão final de compra ou contato */}
                 <Button label="Adicionar ao Carrinho" className="p-button-teal w-full mt-3" onClick={() => setVisible(false)} />
             </Dialog>
         </>

@@ -12,9 +12,7 @@ const ProductForm = ({ onAddProduct }) => {
             id: Math.random(),
             title: title,
             price: price,
-            // 💡 ALTERE AQUI: A imagem que aparecerá nos produtos que o aluno cadastrar
             image: 'https://images.unsplash.com/photo-1544568100-847a948585b9?w=500',
-            // 💡 ALTERE AQUI: A descrição que aparecerá nos produtos cadastrados
             description: 'Produto especial para pets. Ideal para deixar seu bichinho mais feliz!'
         };
         onAddProduct(newProduct);
@@ -26,7 +24,6 @@ const ProductForm = ({ onAddProduct }) => {
         <div className="surface-card p-5 shadow-3 border-round-xl border-top-3 border-teal-600">
             <form onSubmit={handleSubmit} className="p-fluid grid">
                 <div className="field col-12 md:col-6">
-                    {/* 💡 ALTERE AQUI: O nome do rótulo do campo (ex: Nome do Pet, Modelo do Carro) */}
                     <label className="font-bold">Nome do Produto</label>
                     <InputText placeholder="Ex: Caminha Fofa para Cachorro" value={title} onChange={(e) => setTitle(e.target.value)} required />
                 </div>

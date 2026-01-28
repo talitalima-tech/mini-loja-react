@@ -12,8 +12,6 @@ import ProductForm from './components/ProductForm';
 
 
 function App() {
-  // 💡 ALTERE AQUI: O estado agora tenta buscar dados do localStorage primeiro. 
-  // Se não tiver nada lá, ele começa com um array vazio.
   const [products, setProducts] = useState(() => {
     const savedProducts = localStorage.getItem('meuPetShop');
     return savedProducts ? JSON.parse(savedProducts) : [];
@@ -21,7 +19,6 @@ function App() {
 
   const [view, setView] = useState('loja');
 
-  // 💡 ALTERE AQUI: Toda vez que a lista de produtos mudar, nós salvamos no "armário" do navegador
   useEffect(() => {
     localStorage.setItem('meuPetShop', JSON.stringify(products));
   }, [products]);

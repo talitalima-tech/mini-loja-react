@@ -10,10 +10,8 @@ const ProductList = ({ products, setProducts }) => {
                 .then(res => {
                     const artData = res.data.map((item, index) => ({
                         ...item,
-                        // 💡 ALTERE AQUI: O nome padrão dos itens vindos da API e a descrição
                         title: `Produto Pet #${item.id}`,
                         description: 'Item essencial para o conforto, diversão e bem-estar do seu pet. Produto seguro e de alta qualidade.',
-                        // 💡 ALTERE AQUI: O termo de busca para as fotos (ex: 'dog', 'fashion', 'tech')
                         image: `https://source.unsplash.com/random/500x500/?pet&w=500&sig=${index}`,
                     }));
                     setProducts(artData);
