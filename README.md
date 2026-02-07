@@ -45,7 +45,7 @@ ProductForm.js: Interface de cadastro de novos produtos.
 
 🚀 **Como Iniciar:**
 
-Clone o projeto: git clone [https://github.com/seu-usuario/projeto.git](https://github.com/seu-usuario/projeto.git)
+Clone o projeto: git clone [https://github.com/talitalima-tech/projeto.git](https://github.com/talitalima-tech/projeto.git)
 
 Instale as dependências: npm install
 
